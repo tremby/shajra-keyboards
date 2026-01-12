@@ -235,7 +235,7 @@ ___,	XXX,	XXX,	___,	___,	XXX,	___,
 /* right */
 	M(MACRO_VERSION_INFO),	XXX,	Key_KeypadNumLock,	Key_KeypadDivide,	Key_KeypadMultiply,	Key_KeypadSubtract,	___,
 	___,	XXX,	Key_Keypad7,	Key_Keypad8,	Key_Keypad9,	Key_KeypadAdd,	___,
-	/* no-key */	XXX,	Key_Keypad4,	Key_Keypad5,	Key_Keypad6,	Key_KeypadAdd,	___,
+	/* no-key */	Key_KeypadDot,	Key_Keypad4,	Key_Keypad5,	Key_Keypad6,	Key_KeypadAdd,	___,
 	___,	XXX,	Key_Keypad1,	Key_Keypad2,	Key_Keypad3,	Key_KeypadEnter,	___,
 XXX,	XXX,	Key_Keypad0,	Key_KeypadDot, /* thumbs */
 			___ /* palm */
