@@ -228,7 +228,7 @@ ___,	___,	___,	___, /* thumbs */
 Key_F24,	XXX,	XXX,	XXX,	XXX,	XXX,	XXX,
 XXX,	XXX,	XXX,	Key_UpArrow,	XXX,	XXX,	Key_Tab,
 ___,	XXX,	Key_LeftArrow,	Key_DownArrow,	Key_RightArrow,	LSHIFT(Key_Tab),	/* no-key */
-___,	XXX,	XXX,	___,	___,	XXX,	___,
+___,	XXX,	XXX,	Key_DownArrow,	Key_UpArrow,	XXX,	___,
 			/* thumbs */	___,	___,	___,	___,
 			/* palm */	___,
 
