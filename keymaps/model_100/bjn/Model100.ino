@@ -167,7 +167,7 @@ KEYMAPS(
   [PRIMARY] = KEYMAP_STACKED(
 
 /* left */
-Key_F24,	Key_1,	Key_2,	Key_3,	Key_4,	Key_5,	Key_LEDEffectNext,
+Key_Pause,	Key_1,	Key_2,	Key_3,	Key_4,	Key_5,	Key_LEDEffectNext,
 Key_Backtick,	Key_Quote,	Key_Comma,	Key_Period,	Key_P,	Key_Y,	Key_Tab,
 Key_PageUp,	Key_A,	Key_O,	Key_E,	Key_U,	Key_I,	/* no-key */
 Key_PageDown,	Key_Semicolon,	Key_Q,	Key_J,	Key_K,	Key_X,	Key_Escape,
