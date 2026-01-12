@@ -1,4 +1,4 @@
-// -*- mode: c++ -*-
+// vim: vts=16,23,28,25,25,23,20,17,17 noet sw=0 sts=-1 ts=16
 // Copyright 2016-2022 Keyboardio, inc. <jesse@keyboard.io>
 // See "LICENSE" for license details
 
@@ -165,67 +165,80 @@ enum {
 
 KEYMAPS(
   [PRIMARY] = KEYMAP_STACKED(
+
+/* left */
 Key_F24,	Key_1,	Key_2,	Key_3,	Key_4,	Key_5,	Key_LEDEffectNext,
 Key_Backtick,	Key_Quote,	Key_Comma,	Key_Period,	Key_P,	Key_Y,	Key_Tab,
-Key_PageUp,	Key_A,	Key_O,	Key_E,	Key_U,	Key_I,
+Key_PageUp,	Key_A,	Key_O,	Key_E,	Key_U,	Key_I,	/* no-key */
 Key_PageDown,	Key_Semicolon,	Key_Q,	Key_J,	Key_K,	Key_X,	Key_Escape,
-					Key_LeftShift,	Key_Backspace,	Key_LeftControl,	Key_LeftGui,
-					Key_KeymapNext_Momentary,
+			/* thumbs */	Key_LeftShift,	Key_Backspace,	Key_LeftControl,	Key_LeftGui,
+			/* palm */	Key_KeymapNext_Momentary,
 
-		M(MACRO_ANY),	Key_6,	Key_7,	Key_8,	Key_9,	Key_0,	LockLayer(NUMPAD),
-		Key_Enter,	Key_F,	Key_G,	Key_C,	Key_R,	Key_L,	Key_Slash,
-			Key_D,	Key_H,	Key_T,	Key_N,	Key_S,	Key_Minus,
-		Key_RightAlt,	Key_B,	Key_M,	Key_W,	Key_V,	Key_Z,	Key_Equals,
-Key_LeftAlt,	Key_RightControl,	Key_Spacebar,	Key_RightShift,
-			Key_KeymapNext_Momentary
+
+/* right */
+	M(MACRO_ANY),	Key_6,	Key_7,	Key_8,	Key_9,	Key_0,	LockLayer(NUMPAD),
+	Key_Enter,	Key_F,	Key_G,	Key_C,	Key_R,	Key_L,	Key_Slash,
+	/* no-key */	Key_D,	Key_H,	Key_T,	Key_N,	Key_S,	Key_Minus,
+	Key_RightAlt,	Key_B,	Key_M,	Key_W,	Key_V,	Key_Z,	Key_Equals,
+Key_LeftAlt,	Key_RightControl,	Key_Spacebar,	Key_RightShift, /* thumbs */
+			Key_KeymapNext_Momentary /* palm */
   ),
 
   [FUNCTION] = KEYMAP_STACKED(
+
+/* left */
 Key_Turbo,	Key_F1,	Key_F2,	Key_F3,	Key_F4,	Key_F5,	Key_F11,
 ___,	___,	Key_mouseBtnL,	Key_mouseUp,	Key_mouseBtnR,	Key_mouseWarpEnd,	Key_mouseWarpNE,
-Key_Home,	___,	Key_mouseL,	Key_mouseDn,	Key_mouseR,	Key_mouseWarpNW,
+Key_Home,	___,	Key_mouseL,	Key_mouseDn,	Key_mouseR,	Key_mouseWarpNW,	/* no-key */
 Key_End,	Key_PrintScreen,	Key_Insert,	Key_DownArrow,	Key_UpArrow,	Key_mouseWarpSW,	Key_mouseWarpSE,
-					___,	Key_Delete,	___,	___,
-					Key_KeymapNext_Momentary,
+			/* thumbs */	___,	Key_Delete,	___,	___,
+			/* palm */	Key_KeymapNext_Momentary,
 
-		Key_F12,	Key_F6,	Key_F7,	Key_F8,	Key_F9,	Key_F10,	Key_CapsLock,
-		___,	Key_PageDown,	Key_LeftCurlyBracket,	Key_UpArrow,	Key_RightCurlyBracket,	Key_RightArrow,	Key_Backslash,
-			___,	Key_LeftArrow,	Key_DownArrow,	Key_RightArrow,	___,	Key_Pipe,
-		___,	Key_PageUp,	Key_LeftBracket,	___,	Key_RightBracket,	___,	___,
-___,	___,	___,	___,
-			Key_KeymapNext_Momentary
+/* right */
+	Key_F12,	Key_F6,	Key_F7,	Key_F8,	Key_F9,	Key_F10,	Key_CapsLock,
+	___,	Key_PageDown,	Key_LeftCurlyBracket,	Key_UpArrow,	Key_RightCurlyBracket,	Key_RightArrow,	Key_Backslash,
+	/* no-key */	___,	Key_LeftArrow,	Key_DownArrow,	Key_RightArrow,	___,	Key_Pipe,
+	___,	Key_PageUp,	Key_LeftBracket,	___,	Key_RightBracket,	___,	___,
+___,	___,	___,	___, /* thumbs */
+			Key_KeymapNext_Momentary /* palm */
   ),
 
   [DOUBLE_FUNCTION] = KEYMAP_STACKED(
-   ___, Key_F21, Key_F22, Key_F13, Key_F14, Key_F15, Key_F23,
-   ___, ___,     ___,     ___,     ___,     ___,     ___,
-   ___, ___,     ___,     ___,     ___,     ___,
-   ___, ___,     ___,     ___,     ___,     ___,     ___,
-                                            ___,     ___, ___, ___,
-                                            ___,
 
-             Key_F24, Key_F16, Key_F17, Key_F18, Key_F19, Key_F20, ___,
-             ___,     ___,     ___,     ___,     ___,     ___,     ___,
-                      ___,     ___,     ___,     ___,     ___,     ___,
-             ___,     ___,     ___,     ___,     ___,     ___,     ___,
-   ___, ___, ___,     ___,
-                      ___
+/* left */
+___,	Key_F21,	Key_F22,	Key_F13,	Key_F14,	Key_F15,	Key_F23,
+___,	___,	___,	___,	___,	___,	___,
+___,	___,	___,	___,	___,	___,	/* no-key */
+___,	___,	___,	___,	___,	___,	___,
+			/* thumbs */	___,	___,	___,	___,
+			/* palm */	___,
+
+/* right */
+	Key_F24,	Key_F16,	Key_F17,	Key_F18,	Key_F19,	Key_F20,	___,
+	___,	___,	___,	___,	___,	___,	___,
+	/* no-key */	___,	___,	___,	___,	___,	___,
+	___,	___,	___,	___,	___,	___,	___,
+___,	___,	___,	___, /* thumbs */
+			___ /* palm */
   ),
 
   [NUMPAD] = KEYMAP_STACKED(
+
+/* left */
 Key_F24,	XXX,	XXX,	XXX,	XXX,	XXX,	XXX,
 XXX,	XXX,	XXX,	Key_UpArrow,	XXX,	XXX,	Key_Tab,
-___,	XXX,	Key_LeftArrow,	Key_DownArrow,	Key_RightArrow,	LSHIFT(Key_Tab),
+___,	XXX,	Key_LeftArrow,	Key_DownArrow,	Key_RightArrow,	LSHIFT(Key_Tab),	/* no-key */
 ___,	XXX,	XXX,	___,	___,	XXX,	___,
-					___,	___,	___,	___,
-					___,
+			/* thumbs */	___,	___,	___,	___,
+			/* palm */	___,
 
-		M(MACRO_VERSION_INFO),	XXX,	Key_KeypadNumLock,	Key_KeypadDivide,	Key_KeypadMultiply,	Key_KeypadSubtract,	___,
-		___,	XXX,	Key_Keypad7,	Key_Keypad8,	Key_Keypad9,	Key_KeypadAdd,	___,
-			XXX,	Key_Keypad4,	Key_Keypad5,	Key_Keypad6,	Key_KeypadAdd,	___,
-		___,	XXX,	Key_Keypad1,	Key_Keypad2,	Key_Keypad3,	Key_KeypadEnter,	___,
-XXX,	XXX,	Key_Keypad0,	Key_KeypadDot,
-			___
+/* right */
+	M(MACRO_VERSION_INFO),	XXX,	Key_KeypadNumLock,	Key_KeypadDivide,	Key_KeypadMultiply,	Key_KeypadSubtract,	___,
+	___,	XXX,	Key_Keypad7,	Key_Keypad8,	Key_Keypad9,	Key_KeypadAdd,	___,
+	/* no-key */	XXX,	Key_Keypad4,	Key_Keypad5,	Key_Keypad6,	Key_KeypadAdd,	___,
+	___,	XXX,	Key_Keypad1,	Key_Keypad2,	Key_Keypad3,	Key_KeypadEnter,	___,
+XXX,	XXX,	Key_Keypad0,	Key_KeypadDot, /* thumbs */
+			___ /* palm */
   )
 ) // KEYMAPS(
 
