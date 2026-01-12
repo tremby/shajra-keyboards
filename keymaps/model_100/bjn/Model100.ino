@@ -1,4 +1,4 @@
-// vim: vts=16,23,28,25,25,23,20,17,17 noet sw=0 sts=-1 ts=16
+// vim: vts=26,23,28,39,25,23,20,17,17 noet sw=0 sts=-1 ts=16
 // Copyright 2016-2022 Keyboardio, inc. <jesse@keyboard.io>
 // See "LICENSE" for license details
 
@@ -207,17 +207,17 @@ ___,	___,	___,	___, /* thumbs */
 
 /* left */
 ___,	Key_F21,	Key_F22,	Key_F13,	Key_F14,	Key_F15,	Key_F23,
-___,	___,	___,	___,	___,	___,	___,
-___,	___,	___,	___,	___,	___,	/* no-key */
-___,	___,	___,	___,	___,	___,	___,
+___,	Consumer_Stop,	Consumer_ScanPreviousTrack,	Consumer_ScanNextTrack,	Consumer_PlaySlashPause,	___,	___,
+Consumer_VolumeIncrement,	___,	___,	___,	___,	___,	/* no-key */
+Consumer_VolumeDecrement,	___,	___,	___,	___,	___,	___,
 			/* thumbs */	___,	___,	___,	___,
 			/* palm */	___,
 
 /* right */
 	Key_F24,	Key_F16,	Key_F17,	Key_F18,	Key_F19,	Key_F20,	___,
-	___,	___,	___,	___,	___,	___,	___,
-	/* no-key */	___,	___,	___,	___,	___,	___,
-	___,	___,	___,	___,	___,	___,	___,
+	___,	___,	___,	___,	___,	LGUI(LALT(Key_L)),	___,
+	/* no-key */	Consumer_Mute,	___,	___,	___,	System_Sleep,	___,
+	___,	___,	Consumer_StartOrStopMicrophoneCapture,	___,	___,	___,	___,
 ___,	___,	___,	___, /* thumbs */
 			___ /* palm */
   ),
