@@ -310,7 +310,7 @@ tree $(nix build --no-link --print-out-paths) 2>/dev/null
 
 #+results: nix-build
 #+begin_example
-/nix/store/30imbdmwg4a4dm54mv3pmw15lsggdk6q-shajra-keyboards-checks
+/nix/store/jgf1x8010r9iqa611443rklyahj69k2y-shajra-keyboards-checks
 ├── build-ergodoxez-builtin-shajra-flash -> /nix/store/4kg46gz1gyzbkd1cfqk4zhsad4n30fhv-ergodoxez-builtin-shajra-flash-env
 ├── build-ergodoxez-builtin-shajra-hex -> /nix/store/7qmya8j6rpwkscxm45fndlz7x9g7frmk-ergodoxez-builtin-shajra.hex
 ├── build-ergodoxez-factory-flash -> /nix/store/mi5kn5xrrw35czq8iw5qncfn50m8i000-ergodoxez-factory-flash-env
@@ -327,10 +327,10 @@ tree $(nix build --no-link --print-out-paths) 2>/dev/null
 ├── build-moonlander-builtin-shajra-hex -> /nix/store/rsyp4ahg54plgf4rjdh58crq8fnbx24z-moonlander-builtin-shajra.bin
 ├── build-moonlander-factory-flash -> /nix/store/z5yc1x62q1h9x03sf1ifvzxxn0iw3knn-moonlander-factory-flash-env
 ├── build-moonlander-factory-hex -> /nix/store/f1fv58nw24ix48yvzp7gnb7qbshawvf1-moonlander-factory.bin
-├── flash-ergodoxez -> /nix/store/g9xk0fnpjwmr1h1z978n8bh2f0zir263-flash-ergodoxez-env
-├── flash-model01 -> /nix/store/lhik4ixxcb691gs1jbczi9almks3w4aa-flash-model01-env
-├── flash-model100 -> /nix/store/xvga10v72pzygaj6dmjr2f8chbmavasy-flash-model100-env
-├── flash-moonlander -> /nix/store/3wgb1wc327wmi1z3jvngica2kw92b4kh-flash-moonlander-env
+├── flash-ergodoxez -> /nix/store/c2sz52c5yj3bjgid9nlncsjdjlgqy4kh-flash-ergodoxez-env
+├── flash-model01 -> /nix/store/i7xqqylpy6mpib6j6fnrfm30xjzxm9sk-flash-model01-env
+├── flash-model100 -> /nix/store/xy8z18xprnx9hhrg16amp1516f40rssz-flash-model100-env
+├── flash-moonlander -> /nix/store/ycdaf3mlpn90frx94q9cn9al5kvbd1a5-flash-moonlander-env
 ├── licenses -> /nix/store/s8yl6gkg21b86rnyfwvz4b2mcdayqjvi-shajra-keyboards-licenses-env
 ├── support-arduino-upgrade -> /nix/store/8b0rsw69aaysihp50jpxy0js4jygsxr2-arduino-upgrade-env
 └── support-kaleidoscope-deps -> /nix/store/3x88xf9jxb2v0zz33i9akjx4af68bi43-kaleidoscope-deps-env
