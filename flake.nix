@@ -27,7 +27,7 @@
       flake = false;
     };
     arduino-cores-avr = {
-      url = "file+https://downloads.arduino.cc/cores/staging/avr-1.8.7.tar.bz2";
+      url = "file+https://downloads.arduino.cc/cores/staging/avr-1.8.8.tar.bz2";
       flake = false;
     };
     arduino-tools-avr-gcc = {
