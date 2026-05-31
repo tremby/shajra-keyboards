@@ -239,7 +239,7 @@
                   nixpkgs.stable.gnutar
                   nixpkgs.stable.gzip
                   nixpkgs.stable.jq
-                  nixpkgs.stable.nixfmt-rfc-style
+                  nixpkgs.stable.nixfmt
                   nixpkgs.stable.tree
                 ];
                 pathExtras = [ "/bin" ];
