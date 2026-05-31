@@ -346,7 +346,7 @@ nix search nixpkgs 'gpu|opengl|accel' terminal | ansifilter
 ,* legacyPackages.x86_64-linux.alacritty-graphics (0.17.0)
   Cross-platform, GPU-accelerated terminal emulator
 
-,* legacyPackages.x86_64-linux.attyx (0.4.0)
+,* legacyPackages.x86_64-linux.attyx (0.4.2)
   Fast GPU-accelerated terminal emulator built with Zig
 
 ,* legacyPackages.x86_64-linux.darktile (0.0.11)
@@ -358,7 +358,7 @@ nix search nixpkgs 'gpu|opengl|accel' terminal | ansifilter
 ,* legacyPackages.x86_64-linux.ratty (0.3.0)
   GPU-rendered terminal emulator with inline 3D graphics
 
-,* legacyPackages.x86_64-linux.rio (0.4.4)
+,* legacyPackages.x86_64-linux.rio (0.4.5)
   Hardware-accelerated GPU terminal emulator powered by WebGPU
 
 ,* legacyPackages.x86_64-linux.wezterm (0-unstable-2026-03-31)
@@ -381,7 +381,7 @@ nix search nixpkgs/nixos-<<get("nixos-latest")>>#wezterm ^ | ansifilter
 #+end_src
 
 #+RESULTS: nix-search-remote-wezterm
-: * legacyPackages.x86_64-linux.wezterm (0-unstable-2025-10-14)
+: * legacyPackages.x86_64-linux.wezterm (0-unstable-2026-03-31)
 :   GPU-accelerated cross-platform terminal emulator and multiplexer written by @wez and implemented in Rust
 
 Here {{{get(nixos-latest,~/nixos-,~)}}} overrides the default =nixpkgs-unstable=
@@ -457,7 +457,7 @@ readlink result*
 #+end_src
 
 #+RESULTS: nix-build-link
-: /nix/store/wbxc1ggqar52m0qqh4kmrwdcwscics7l-shajra-keyboards-licenses-env
+: /nix/store/mh21275fq8fgyv0bla9wsyncpvvigr4k-shajra-keyboards-licenses-env
 
 Following these symlinks, we can see the files the project provides:
 
@@ -486,7 +486,7 @@ nix path-info .#<<get("package-attr-short")>>
 #+end_src
 
 #+results: nix-build-path
-: /nix/store/wbxc1ggqar52m0qqh4kmrwdcwscics7l-shajra-keyboards-licenses-env
+: /nix/store/mh21275fq8fgyv0bla9wsyncpvvigr4k-shajra-keyboards-licenses-env
 
 ** Running commands in a shell
 
@@ -648,7 +648,7 @@ nix shell --ignore-environment \
 #+end_src
 
 #+RESULTS: nix-shell-remote
-: /nix/store/wbxc1ggqar52m0qqh4kmrwdcwscics7l-shajra-keyboards-licenses-env/bin/shajra-keyboards-licenses
+: /nix/store/mh21275fq8fgyv0bla9wsyncpvvigr4k-shajra-keyboards-licenses-env/bin/shajra-keyboards-licenses
 
 What we do with local flake references can work just as well with remote flake
 references.
@@ -699,7 +699,7 @@ nix profile list --profile /tmp/nix-profile | ansifilter
 : Flake attribute:    packages.x86_64-linux.licenses-thirdparty
 : Original flake URL: git+file:///home/shajra/src/shajra-keyboards
 : Locked flake URL:   git+file:///home/shajra/src/shajra-keyboards
-: Store paths:        /nix/store/wbxc1ggqar52m0qqh4kmrwdcwscics7l-shajra-keyboards-licenses-env
+: Store paths:        /nix/store/mh21275fq8fgyv0bla9wsyncpvvigr4k-shajra-keyboards-licenses-env
 
 If we want to uninstall a program from our profile, we can reference it by name:
 
