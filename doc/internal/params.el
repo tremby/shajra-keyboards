@@ -12,5 +12,5 @@
  ;; run-target-long will always prefix "bin/"
  (nix-latest           . "2.34.7")
  (nix-stable           . "2.31.5")
- (nixos-latest         . "25.11")
+ (nixos-latest         . "26.05")
  (platforms            . "Linux on x86-64 machines"))
