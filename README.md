@@ -1,3 +1,12 @@
+bnote
+=====
+1. git fetch upstream and then rebase on that
+2. Update keymap in keymaps/model_100/bjn/Model100.ino
+3. Flash with ./flash-model100 -K keymaps/model_100 -k bjn
+
+upstream readme
+===============
+
 - [About the project](#sec-1)
 - [The mappings](#sec-2)
   - [Model 100 and Model 01 “shajra” keymap](#sec-2-1)
