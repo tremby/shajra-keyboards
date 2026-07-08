@@ -186,7 +186,7 @@ Key_LeftAlt,	Key_RightControl,	Key_Spacebar,	Key_RightShift, /* thumbs */
   [FUNCTION] = KEYMAP_STACKED(
 
 /* left */
-Key_ScrollLock,	Key_F1,	Key_F2,	Key_F3,	Key_F4,	Key_F5,	Key_F11,
+XXX,	Key_F1,	Key_F2,	Key_F3,	Key_F4,	Key_F5,	Key_F11,
 ___,	___,	Key_mouseBtnL,	Key_mouseUp,	Key_mouseBtnR,	Key_mouseWarpEnd,	Key_mouseWarpNE,
 Key_Home,	___,	Key_mouseL,	Key_mouseDn,	Key_mouseR,	Key_mouseWarpNW,	/* no-key */
 Key_End,	Key_PrintScreen,	Key_Insert,	Key_DownArrow,	Key_UpArrow,	Key_mouseWarpSW,	Key_mouseWarpSE,
@@ -232,7 +232,7 @@ ___,	XXX,	XXX,	Key_DownArrow,	Key_UpArrow,	XXX,	___,
 			/* palm */	___,
 
 /* right */
-	M(MACRO_VERSION_INFO),	XXX,	Key_KeypadNumLock,	Key_KeypadDivide,	Key_KeypadMultiply,	Key_KeypadSubtract,	___,
+	M(MACRO_VERSION_INFO),	XXX,	Key_KeypadNumLock,	Key_KeypadDivide,	Key_KeypadMultiply,	Key_KeypadSubtract,	Key_ScrollLock,
 	___,	XXX,	Key_Keypad7,	Key_Keypad8,	Key_Keypad9,	Key_KeypadAdd,	___,
 	/* no-key */	Key_KeypadDot,	Key_Keypad4,	Key_Keypad5,	Key_Keypad6,	Key_KeypadAdd,	___,
 	___,	XXX,	Key_Keypad1,	Key_Keypad2,	Key_Keypad3,	Key_KeypadEnter,	___,
