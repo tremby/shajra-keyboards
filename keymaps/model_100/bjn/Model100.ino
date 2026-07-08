@@ -83,7 +83,6 @@
 
 enum {
   MACRO_VERSION_INFO,
-  MACRO_ANY,
 };
 
 
@@ -176,7 +175,7 @@ Key_PageDown,	Key_Semicolon,	Key_Q,	Key_J,	Key_K,	Key_X,	Key_Escape,
 
 
 /* right */
-	M(MACRO_ANY),	Key_6,	Key_7,	Key_8,	Key_9,	Key_0,	LockLayer(NUMPAD),
+	XXX,	Key_6,	Key_7,	Key_8,	Key_9,	Key_0,	LockLayer(NUMPAD),
 	Key_Enter,	Key_F,	Key_G,	Key_C,	Key_R,	Key_L,	Key_Slash,
 	/* no-key */	Key_D,	Key_H,	Key_T,	Key_N,	Key_S,	Key_Minus,
 	Key_RightAlt,	Key_B,	Key_M,	Key_W,	Key_V,	Key_Z,	Key_Equals,
@@ -257,22 +256,6 @@ static void versionInfoMacro(uint8_t key_state) {
   }
 }
 
-/** anyKeyMacro is used to provide the functionality of the 'Any' key.
- *
- * When the 'any key' macro is toggled on, a random alphanumeric key is
- * selected. While the key is held, the function generates a synthetic
- * keypress event repeating that randomly selected key.
- *
- */
-
-static void anyKeyMacro(KeyEvent &event) {
-  if (keyToggledOn(event.state)) {
-    event.key.setKeyCode(Key_A.getKeyCode() + (uint8_t)(millis() % 36));
-    event.key.setFlags(0);
-  }
-}
-
-
 /** macroAction dispatches keymap events that are tied to a macro
     to that macro. It takes two uint8_t parameters.
 
@@ -292,9 +275,6 @@ const macro_t *macroAction(uint8_t macro_id, KeyEvent &event) {
     versionInfoMacro(event.state);
     break;
 
-  case MACRO_ANY:
-    anyKeyMacro(event);
-    break;
   }
   return MACRO_NONE;
 }
