@@ -186,7 +186,7 @@ Key_LeftAlt,	Key_RightControl,	Key_Spacebar,	Key_RightShift, /* thumbs */
   [FUNCTION] = KEYMAP_STACKED(
 
 /* left */
-___,	Key_F1,	Key_F2,	Key_F3,	Key_F4,	Key_F5,	Key_F11,
+Key_ScrollLock,	Key_F1,	Key_F2,	Key_F3,	Key_F4,	Key_F5,	Key_F11,
 ___,	___,	Key_mouseBtnL,	Key_mouseUp,	Key_mouseBtnR,	Key_mouseWarpEnd,	Key_mouseWarpNE,
 Key_Home,	___,	Key_mouseL,	Key_mouseDn,	Key_mouseR,	Key_mouseWarpNW,	/* no-key */
 Key_End,	Key_PrintScreen,	Key_Insert,	Key_DownArrow,	Key_UpArrow,	Key_mouseWarpSW,	Key_mouseWarpSE,
